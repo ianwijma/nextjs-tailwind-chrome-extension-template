@@ -1,0 +1,39 @@
+{
+  "name": "example-extension",
+  "description": "Example extension that helps you kick start development.",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next build --no-lint --no-mangling && npm run post-build-fixes",
+    "build": "next build && npm run post-build-fixes",
+    "post-build-fixes": "bin/post-build-fixes"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/system": "^2.2.5",
+    "@nextui-org/theme": "^2.2.9",
+    "@types/chrome": "^0.0.269",
+    "formik": "^2.4.6",
+    "framer-motion": "^11.3.24",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "copy-webpack-plugin": "^12.0.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "glob": "^11.0.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

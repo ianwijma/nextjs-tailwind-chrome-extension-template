@@ -1,0 +1,46 @@
+{
+	"$schema": "https://json.schemastore.org/chrome-manifest",
+	"manifest_version": 3,
+	"name": "Example Extension",
+	"description": "Example extension that helps you kick start development.",
+	"version": "1.0",
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "extension_16.png",
+			"24": "extension_24.png",
+			"32": "extension_32.png"
+		}
+	},
+	"icons": {
+		"16": "extension_16.png",
+		"32": "extension_32.png",
+		"48": "extension_48.png",
+		"128": "extension_128.png",
+		"256": "extension_256.png"
+	},
+	"options_page": "options.html",
+	"content_scripts": [
+		{
+			"js": [
+				"content.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			]
+		}
+	],
+	"permissions": [
+		"storage",
+		"alarms"
+	],
+	"host_permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"devtools_page": "start-devtools.html"
+}
